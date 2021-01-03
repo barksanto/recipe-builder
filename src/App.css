@@ -1,6 +1,8 @@
 .App {
   min-height: 100vh;
   background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
+  display: flex;
+  justify-content: center;
 }
 
 .search-form{
@@ -8,6 +10,9 @@
   display:flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  top: 15px;
+  left: 20px;
 }
 
 .search-bar{
@@ -25,6 +30,11 @@
 
 .recipes{
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
+  /* width: 80vw; */
 }
+
+/* .container{
+  max-width: 400px;
+} */
