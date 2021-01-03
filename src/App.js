@@ -42,16 +42,14 @@ const App = () => {
       <div className="recipes">
         <div className="container">
           <div className="row">
-          < div className="col-6">
             {recipes.map(recipe => (
               <Recipe
                 key={recipe.recipe.label}
                 title={recipe.recipe.label}
                 calories={recipe.recipe.calories}
                 image={recipe.recipe.image}
-                ingredients={recipe.recipe.ingredients} />
+                ingredients={recipe.recipe.ingredients} className="col-3"/>
             ))}
-            </div>
           </div>
         </div>
       </div>
